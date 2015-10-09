@@ -4,15 +4,10 @@
       "type": "Layer",
       "id": "std",
       "title": "山行記録",
-      "iconUrl": "",
       "url": "https://github.com/tkmoda/gsimaps/blob/gh-pages/example231/{z}/{x}/{y}.geojson",
-      "subdomains": "",
-      "attribution": "",
-      "cocotile": true,
       "maxZoom":18,
       "maxNativeZoom":2,
-      "legendUrl": "http://maps.gsi.go.jp/development/ichiran.html#std",
-      "html": ""
+      "html": "https://github.com/tkmoda/gsimaps/edit/gh-pages/layers_txt"
     },
     {
       "type": "Layer",
