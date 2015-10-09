@@ -10,7 +10,7 @@
       "attribution": "",
       "cocotile": true,
       "maxZoom":18,
-      "maxNativeZoom":2
+      "maxNativeZoom":2,
       "legendUrl": "http://maps.gsi.go.jp/development/ichiran.html#std",
       "html": ""
     },
