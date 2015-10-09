@@ -2,12 +2,12 @@
   "layers": [
     {
       "type": "Layer",
-      "id": "std",
+      "id": "example231",
       "title": "山行記録",
-      "url": "https://github.com/tkmoda/gsimaps/blob/gh-pages/example231/{z}/{x}/{y}.geojson",
+      "url": "https://tkmoda.github.io/gsimaps/example231/{z}/{x}/{y}.geojson",
       "maxZoom":18,
       "maxNativeZoom":2,
-      "html": "https://github.com/tkmoda/gsimaps/edit/gh-pages/layers_txt"
+      "html": "<a href='https://github.com/tkmoda/gsimaps/edit/gh-pages/layers_txt'>編集</a>"
     },
     {
       "type": "Layer",
