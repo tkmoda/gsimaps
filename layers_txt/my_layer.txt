@@ -5,7 +5,7 @@
       "id": "std",
       "title": "山行記録",
       "iconUrl": "",
-      "url": "https://github.com/tkmoda/gsimaps/blob/gh-pages/example231/2/3/1.geojson",
+      "url": "https://github.com/tkmoda/gsimaps/blob/gh-pages/example231/{z}/{x}/{y}.geojson",
       "subdomains": "",
       "attribution": "",
       "cocotile": true,
