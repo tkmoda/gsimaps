@@ -3,7 +3,7 @@
     {
       "type": "Layer",
       "id": "std",
-      "title": "標準地図",
+      "title": "山行記録",
       "iconUrl": "",
       "url": "http://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png",
       "subdomains": "",
@@ -15,7 +15,7 @@
     {
       "type": "Layer",
       "id": "pale",
-      "title": "淡色地図",
+      "title": "旅行記録",
       "iconUrl": "",
       "url": "http://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png",
       "subdomains": "",
