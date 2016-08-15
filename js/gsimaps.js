@@ -45,10 +45,11 @@ function setDefaultPosition(){
 function setCurrentPosition(pos){
 	var crd = pos.coords;
 	alert("Lat:" + crd.latitude + "Long:" + crd.longitude + "Accuracy:" + crd.accuracy)
-	CONFIG.DEFAULT = { CENTER : [parseFloat(crd.latitude),parseFloat(crd.longitude)],ZOOM : 8};
+//	CONFIG.DEFAULT = { CENTER : [parseFloat(crd.latitude),parseFloat(crd.longitude)],ZOOM : 8};
+	CONFIG.DEFAULT = { CENTER : [crd.latitude,crd.longitude],ZOOM : 8};
 }
 
-navigator.geolocation.getCurrentPosition(setCurrentPosition,setDefaultPosition)
+//navigator.geolocation.getCurrentPosition(setCurrentPosition,setDefaultPosition)
 //<<<<edit end
 
 // レイヤータイプリスト
