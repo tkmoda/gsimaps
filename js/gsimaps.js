@@ -36,11 +36,18 @@ CONFIG.TOPMESSAGE = null;
 	EXPIRES : -1 //-1  // クッキーの有効期限( hour )
 };*/
 
-// 初期位置
-CONFIG.DEFAULT = { CENTER : [35.3622222, 138.7313889],ZOOM : 5};
+//2016.8.15 odahara edit>>>>
+// 初期位置  
+function setDefaultPosition(){
+        CONFIG.DEFAULT = { CENTER : [35.3622222, 138.7313889],ZOOM : 5};
+}
+function setCurrentPosition(pos){
+	var crd = pos.coords;
+	CONFIG.DEFAULT = { CENTER : [crd.latitude, crd.longitude],ZOOM : 5};
+}
 
-//現在位置の取得
-navigator.geolocation.getCurrentPosition(new Function("alert('aaa')"),new Function("alert('bbb')"))
+navigator.geolocation.getCurrentPosition(setCurrentPosition,setDefaultPosition)
+//<<<<edit end
 
 // レイヤータイプリスト
 CONFIG.LAYERTYPELIST = {
