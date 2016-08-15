@@ -49,7 +49,7 @@ function setCurrentPosition(pos){
 	CONFIG.DEFAULT = { CENTER : [crd.latitude,crd.longitude],ZOOM : 8};
 }
 
-//navigator.geolocation.getCurrentPosition(setCurrentPosition,setDefaultPosition)
+navigator.geolocation.getCurrentPosition(setCurrentPosition,setDefaultPosition)
 //<<<<edit end
 
 // レイヤータイプリスト
