@@ -51,7 +51,7 @@ function setCurrentPosition(pos){
 	initialize();
 }
 
-navigator.geolocation.getCurrentPosition(setCurrentPosition,setDefaultPosition)
+navigator.geolocation.watchPosition(setCurrentPosition,setDefaultPosition)
 //<<<<edit end
 
 // レイヤータイプリスト
