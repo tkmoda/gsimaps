@@ -39,6 +39,9 @@ CONFIG.TOPMESSAGE = null;
 // 初期位置
 CONFIG.DEFAULT = { CENTER : [35.3622222, 138.7313889],ZOOM : 5};
 
+//現在位置の取得
+navigator.geolocation.getCurrentPosition(new Function("alert("aaa")"),new Function("alert("bbb")"))
+
 // レイヤータイプリスト
 CONFIG.LAYERTYPELIST = {
 	"kml"           : { caption : "KML", isTile: false },
