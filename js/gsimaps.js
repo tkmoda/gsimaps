@@ -43,6 +43,7 @@ function setDefaultPosition(){
 }
 function setCurrentPosition(pos){
 	var crd = pos.coords;
+	alert("Lat:" + crd.latitude + "Long:" + crd.longitude + "Accuracy:" + crd.accuracy)
 	CONFIG.DEFAULT = { CENTER : [crd.latitude, crd.longitude],ZOOM : 5};
 }
 
