@@ -39,12 +39,12 @@ CONFIG.TOPMESSAGE = null;
 //2016.8.15 odahara edit>>>>
 // 初期位置  
 function setDefaultPosition(){
-        CONFIG.DEFAULT = { CENTER : [35.3622222, 138.7313889],ZOOM : 5};
+        CONFIG.DEFAULT = { CENTER : [35.3622222, 138.7313889],ZOOM : 3};
 }
 function setCurrentPosition(pos){
 	var crd = pos.coords;
 	alert("Lat:" + crd.latitude + "Long:" + crd.longitude + "Accuracy:" + crd.accuracy)
-	CONFIG.DEFAULT = { CENTER : [crd.latitude, crd.longitude],ZOOM : 5};
+	CONFIG.DEFAULT = { CENTER : [crd.latitude, crd.longitude],ZOOM : 8};
 }
 
 navigator.geolocation.getCurrentPosition(setCurrentPosition,setDefaultPosition)
