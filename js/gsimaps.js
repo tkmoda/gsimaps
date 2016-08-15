@@ -38,9 +38,9 @@ CONFIG.TOPMESSAGE = null;
 
 //2016.8.15 odahara edit>>>>
 // 初期位置
-CONFIG.DEFAULT = { CENTER : [35.3622222, 138.7313889],ZOOM : 3};
+CONFIG.DEFAULT = { CENTER : [35.3622222, 138.7313889],ZOOM : 8};
 function setDefaultPosition(){
-        CONFIG.DEFAULT = { CENTER : [35.3622222, 138.7313889],ZOOM : 3};
+        CONFIG.DEFAULT = { CENTER : [35.3622222, 138.7313889],ZOOM : 8};
 }
 function setCurrentPosition(pos){
 	var crd = pos.coords;
