@@ -47,7 +47,8 @@ function setCurrentPosition(pos){
 	var crd = pos.coords;
 	alert("Lat:" + crd.latitude + "Long:" + crd.longitude + "Accuracy:" + crd.accuracy)
 
-        L.map('map').setView([crd.latitude,crd.longitude],14)
+        GSI.GLOBALS.map.setView([crd.latitude,crd.longitude],14)
+        L.marker([crd.latitude,crd.longitude]).addTo(GSI.GLOBALS.map)
 //	CONFIG.DEFAULT = { CENTER : [parseFloat(crd.latitude),parseFloat(crd.longitude)],ZOOM : 8};
 //	CONFIG.DEFAULT = { CENTER : [crd.latitude,crd.longitude],ZOOM : 14};
 //	initialize();
