@@ -55,7 +55,7 @@ function setCurrentPosition(pos){
 //        GSI.GLOBALS.map.setView([crd.latitude,crd.longitude],14)
 
         var marker = L.marker([crd.latitude,crd.longitude]).addTo(GSI.GLOBALS.map);
-        if (markers.push(marker) > 5)
+        if (markers.push(marker) > 10)
         {
         	GSI.GLOBALS.map.removeLayer(markers.shift());
         }	
