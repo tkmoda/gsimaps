@@ -38,7 +38,7 @@ CONFIG.TOPMESSAGE = null;
 
 //2016.8.15 odahara edit>>>>
 // 初期位置
-//CONFIG.DEFAULT = { CENTER : [35.3622222, 138.7313889],ZOOM : 14};
+CONFIG.DEFAULT = { CENTER : [35.3622222, 138.7313889],ZOOM : 14};
 function setDefaultPosition(){
         CONFIG.DEFAULT = { CENTER : [35.3622222, 138.7313889],ZOOM : 14};
 	initialize();
@@ -47,7 +47,8 @@ function setCurrentPosition(pos){
 	var crd = pos.coords;
 	alert("Lat:" + crd.latitude + "Long:" + crd.longitude + "Accuracy:" + crd.accuracy)
 
-        //GSI.GLOBALS.map.setView([crd.latitude,crd.longitude],14)
+
+        GSI.GLOBALS.map.setView([crd.latitude,crd.longitude],14)
         L.marker([crd.latitude,crd.longitude]).addTo(GSI.GLOBALS.map)
 //	CONFIG.DEFAULT = { CENTER : [parseFloat(crd.latitude),parseFloat(crd.longitude)],ZOOM : 8};
 //	CONFIG.DEFAULT = { CENTER : [crd.latitude,crd.longitude],ZOOM : 14};
