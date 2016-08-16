@@ -45,13 +45,20 @@ function setDefaultPosition(){
         CONFIG.DEFAULT = { CENTER : [35.3622222, 138.7313889],ZOOM : 14};
 	initialize();
 }
+
+var markers = [];
+
 function setCurrentPosition(pos){
 	var crd = pos.coords;
 //	alert("Lat:" + crd.latitude + "Long:" + crd.longitude + "Accuracy:" + crd.accuracy)
 
 //        GSI.GLOBALS.map.setView([crd.latitude,crd.longitude],14)
 
-        L.marker([crd.latitude,crd.longitude]).addTo(GSI.GLOBALS.map);
+        var marker = L.marker([crd.latitude,crd.longitude]).addTo(GSI.GLOBALS.map);
+        if (markers.push(marker) > 5)
+        {
+        	GSI.GLOBALS.map.removeLayer(markers.shift());
+        }	
 
 //	CONFIG.DEFAULT = { CENTER : [crd.latitude,crd.longitude],ZOOM : 14};
 //	initialize();
