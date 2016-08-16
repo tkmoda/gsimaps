@@ -60,7 +60,7 @@ function setCurrentPosition(pos){
 }
 
 navigator.geolocation.getCurrentPosition(
-	new Function(pos)
+	function(pos)
 	{
 		var crd = pos.coords;
 		GSI.GLOBALS.map.setView([crd.latitude,crd.longitude],14);
