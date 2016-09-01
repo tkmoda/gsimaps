@@ -85,7 +85,7 @@ function handleOrientation(event){
 	textbox.innerHTML = 'x:' + x +' y:' + y + ' z:' + z; 
 	
 }
-window.addEventListener('deviceorientation',handleOrientation);
+window.addEventListener('deviceorientation',handleOrientation,true);
 
 //<<<<edit end
 
