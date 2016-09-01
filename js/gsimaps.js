@@ -82,11 +82,23 @@ function handleOrientation(event){
 	var z = event.alpha;
 	var x = event.beta;
 	var y = event.gamma;
-	alert('x:' + x +' y:' + y + ' z:' + z)
+	alert('x:' + x +' \ny:' + y + ' \nz:' + z)
 	textbox.innerHTML = 'x:' + x +' y:' + y + ' z:' + z; 
 	
 }
-window.addEventListener('deviceorientation',handleOrientation,true);
+window.addEventListener('deviceorientation',handleOrientation);
+
+//加速度の反映
+function handleMotion(event){
+	var z = event.accelerationIncludingGravity.x;
+	var x = event.accelerationIncludingGravity.y;
+	var y = event.accelerationIncludingGravity.z;
+	alert('x:' + x +' \ny:' + y + ' \nz:' + z)
+	textbox.innerHTML = 'x:' + x +' y:' + y + ' z:' + z; 
+}
+window.addEventListener('devicemotion',handleMotion);
+
+
 
 //<<<<edit end
 
