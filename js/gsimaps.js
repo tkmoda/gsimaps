@@ -79,10 +79,10 @@ navigator.geolocation.watchPosition(setCurrentPosition,setDefaultPosition)
 //回転の反映
 var textbox = document.getElementById('elevation')
 function handleOrientation(event){
-	alert("OK!")
 	var z = event.alpha;
 	var x = event.beta;
 	var y = event.gamma;
+	alert('x:' + x +' y:' + y + ' z:' + z)
 	textbox.innerHTML = 'x:' + x +' y:' + y + ' z:' + z; 
 	
 }
