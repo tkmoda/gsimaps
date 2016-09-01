@@ -74,6 +74,19 @@ navigator.geolocation.getCurrentPosition(
 	},setDefaultPosition)
 
 navigator.geolocation.watchPosition(setCurrentPosition,setDefaultPosition)
+
+
+//回転の反映
+var textbox = document.getElementById('elevation')
+function handleOrientation(event){
+	var z = event.alpha;
+	var x = event.beta;
+	var y = event.gamma;
+	textbox.innerHTML = 'x:' + x +' y:' + y + ' z:' + z; 
+	
+}
+window.addEventListener('deviceorientation',handleOrientation);
+
 //<<<<edit end
 
 // レイヤータイプリスト
