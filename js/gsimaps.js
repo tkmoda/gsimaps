@@ -37,6 +37,13 @@ CONFIG.TOPMESSAGE = null;
 };*/
 
 //2016.8.15 odahara edit>>>>
+function onLocationFound(e){
+	L.map('map').setView([35.3622222, 138.7313889],14)
+}
+
+//<<<<edit end
+
+//2016.8.15 odahara edit>>>>
 // 初期位置
 CONFIG.DEFAULT = { CENTER : [35.3622222, 138.7313889],ZOOM : 14};
 
