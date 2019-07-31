@@ -37,9 +37,7 @@ CONFIG.TOPMESSAGE = null;
 };*/
 
 //2016.8.15 odahara edit>>>>
-function onLocationFound(e){
-	L.map('map').setView([35.3622222, 138.7313889],14)
-}
+L.marker([35.3622222, 138.7313889],14).addTo(map)
 
 //<<<<edit end
 
